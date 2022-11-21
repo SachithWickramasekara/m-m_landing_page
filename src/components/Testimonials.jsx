@@ -32,14 +32,6 @@ const CustomerReview = () => {
     <div className="flex flex-col items-center py-16 px-5 ">
       <span className="text-4xl font-semibold">Customer Reviews</span>
 
-      <span className="text-center max-w-3xl md:max-w-6xl mt-8 tracking-wide text-[#1E1E1E]">
-        Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Mattis
-        enim ut tellus elementum sagittis. In hendrerit gravida rutrum
-        quisque,Vulputate enim nulla aliquet porttitor lacus luctus accumsan.
-        Mattis enim ut tellus elementum sagittis. In hendrerit gravida rutrum
-        quisque,hendrerit gravida rutrum quisque,
-      </span>
-
       <div className="mt-10 flex items-center justify-center">
         <div
           onClick={prev}
