@@ -1,0 +1,13 @@
+@media (max-width: 1095px) {
+  .bannerImg {
+      height: 50vh;
+      object-fit: cover;
+  }
+
+  .mainBanner {
+      height: 50vh;
+  }
+  button{
+    visibility: hidden;
+  }
+}
