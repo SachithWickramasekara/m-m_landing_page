@@ -28,7 +28,7 @@ const About = () => {
               customers, with reliable, efficient & Prompt service. We help ease
               import & export regulations and paperwork in record time for all
               of your shipments. Handling all the trade compliance and
-              procedures, we help clear consignments bye sea, land and air more
+              procedures, we help clear consignments by sea, land and air more
               efficiently understanding local rules.
               <br />
               <br />
