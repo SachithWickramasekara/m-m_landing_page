@@ -3,13 +3,13 @@ export const itemHeadingProducts = [
       heading: "Option 1",
     },
     {
-      heading: "Option 1",
+      heading: "Option 2",
     },
     {
-      heading: "option 1",
+      heading: "Option 3",
     },
     {
-      heading: "option 1",
+      heading: "Option 4",
     },
   ]
   

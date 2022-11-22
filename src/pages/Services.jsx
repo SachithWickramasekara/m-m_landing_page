@@ -6,9 +6,9 @@ import {  itemHeadingProducts,
     category4Data,} from '../data/services'
 
 const Services_ = () => {
-  const [current, setCuurent] = useState("Import Facilities");
+  const [current, setCuurent] = useState("Option 1");
   return (
-    <div className="flex flex-col items-center px-3">
+    <div className="flex flex-col p-24 items-center px-3">
       <span className="text-6xl font-semibold text-[#ab1616]">Our Services</span>
       <div className="flex justify-center mt-12 w-full md:w-1/2">
         {itemHeadingProducts.map((item) => {
@@ -44,14 +44,12 @@ const Services_ = () => {
       </div>
 
       <div className="flex flex-row items-center justify-center">
-        <div className={`${current === "Export Facilities" ? "flex" : "hidden"} flex-wrap md:w-2/3 mt-10 items-center justify-center`}>
+        <div className={`${current === "Option 1" ? "flex" : "hidden"} flex-wrap md:w-2/3 mt-10 items-center justify-center`}>
           {category1Data.map((item) => {
             return (
                 <section class="text-gray-600 body-font">
                     <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
-                        <div class="flex mx-auto flex-wrap mb-20">
-                        </div>
-                        <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/>
+                        <img class="xl:w-[40%] lg:w-2/3 md:w-full w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/>
                         <div class="flex flex-col text-center w-full">
                         <h1 class="text-xl font-medium title-font mb-4 text-gray-900">{item.title}</h1>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">{item.desc}</p>
@@ -62,13 +60,11 @@ const Services_ = () => {
           })}
         </div>
 
-        <div className={`${current === "Import Facilities" ? "flex" : "hidden"} flex-wrap md:w-2/3 mt-10 items-center justify-center`}>
+        <div className={`${current === "Option 2" ? "flex" : "hidden"} flex-wrap md:w-2/3 mt-10 items-center justify-center`}>
           {category2Data.map((item) => {
             return (
                 <section class="text-gray-600 body-font">
                     <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
-                        <div class="flex mx-auto flex-wrap mb-20">
-                        </div>
                         <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/>
                         <div class="flex flex-col text-center w-full">
                         <h1 class="text-xl font-medium title-font mb-4 text-gray-900">{item.title}</h1>
@@ -80,13 +76,11 @@ const Services_ = () => {
           })}
         </div>
 
-        <div className={`${current === "Gem Dealing" ? "flex" : "hidden"} flex-wrap md:w-2/3 mt-10 items-center justify-center`}>
+        <div className={`${current === "Option 3" ? "flex" : "hidden"} flex-wrap md:w-2/3 mt-10 items-center justify-center`}>
           {category3Data.map((item) => {
             return (
                 <section class="text-gray-600 body-font">
                     <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
-                        <div class="flex mx-auto flex-wrap mb-20">
-                        </div>
                         <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/>
                         <div class="flex flex-col text-center w-full">
                         <h1 class="text-xl font-medium title-font mb-4 text-gray-900">{item.title}</h1>
@@ -98,13 +92,11 @@ const Services_ = () => {
           })}
         </div>
 
-        <div className={`${current === "Custom House Agent" ? "flex" : "hidden"} flex-wrap md:w-2/3 mt-10 items-center justify-center`}>
+        <div className={`${current === "Option 4" ? "flex" : "hidden"} flex-wrap md:w-2/3 mt-10 items-center justify-center`}>
           {category4Data.map((item) => {
             return (
                 <section class="text-gray-600 body-font">
                     <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
-                        <div class="flex mx-auto flex-wrap mb-20">
-                        </div>
                         <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/>
                         <div class="flex flex-col text-center w-full">
                         <h1 class="text-xl font-medium title-font mb-4 text-gray-900">{item.title}</h1>
