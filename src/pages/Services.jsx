@@ -4,7 +4,7 @@ import {  itemHeadingProducts,
     category2Data,
     category3Data,
     category4Data,} from '../data/services'
-
+import serv1 from '../images/serv1.jpg'
 const Services_ = () => {
   const [current, setCuurent] = useState("Option 1");
   return (
@@ -49,7 +49,7 @@ const Services_ = () => {
             return (
                 <section class="text-gray-600 body-font">
                     <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
-                        <img class="xl:w-[40%] lg:w-2/3 md:w-full w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/>
+                        <img class="xl:w-[40%] lg:w-2/3 md:w-full w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src={serv1}/>
                         <div class="flex flex-col text-center w-full">
                         <h1 class="text-xl font-medium title-font mb-4 text-gray-900">{item.title}</h1>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">{item.desc}</p>
