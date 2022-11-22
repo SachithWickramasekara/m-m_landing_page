@@ -6,6 +6,7 @@ import Services from "../components/services";
 import Testimonials from "../components/Testimonials";
 import MainBanner from "../components/MainBanner";
 
+
 AOS.init();
 
 const Hero = () => {
