@@ -11,31 +11,29 @@ const About = () => {
     <>
     <Banner />
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto flex flex-col">
-      <h1 className="sm:text-5xl text-5xl font-medium title-font text-center text-red-700 mb10">About Us</h1>
-        <div className="lg:w-4/6 mx-auto">
-          <div className="flex flex-col sm:flex-row mt-10 ">
-            {about.map((items)=>(
-            <>
-            <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8 bg-red-200">
-            <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-                <circle cx="12" cy="7" r="4">
-                  {/* <img src={ceo}/> */}
-                </circle>
-            </div>
-            <div className="flex flex-col items-center text-center justify-center">
-              <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">Phoebe Caulfield</h2>
-              <div className="w-12 h-1 bg-red-500 rounded mt-2 mb-4"></div>
-              <p className="text-base text-black">{items.para1}</p>
-            </div>
-          </div>
-          <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-red-700 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-            <p className="leading-relaxed text-lg mb-4 text-black font-normal">{items.para2}</p>
-          </div>
+      <div class="container px-5 py-24 mx-auto">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+          {about.map((items=>(
+          <>
+            <h2 class="text-red-900 font-medium title-font tracking-wider text-5xl">About Us</h2>
+            <span class="inline-block h-1 w-32 rounded bg-red-500 mt-8 mb-6"></span>
+            <p class="leading-relaxed text-lg">{items.para2}</p>
             </>
-            ))}
-
-          </div>
+          )))}
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-300 body-font">
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <img class="object-cover object-center rounded" alt="hero" src={ceo}/>
+        </div>
+        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-red-900">CEO's Note
+          </h1>
+          <p class="mb-8 leading-relaxed">
+          --  We are a boutique logistics company with a focus on innovating captivating business experiences In order to produce commercial solutions, covering your needs with an inventive workforce.  --
+          </p>
         </div>
       </div>
     </section>

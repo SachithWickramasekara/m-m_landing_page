@@ -1,115 +1,51 @@
-import { useState } from "react";
-import {  itemHeadingProducts,
-    category1Data,
-    category2Data,
-    category3Data,
-    category4Data,} from '../data/services'
+import React from 'react'
+import serv1 from '../images/serv1.jpg'
+import serv2 from '../images/serv2.jpg'
+import serv3 from '../images/serv3.jpg'
+import serv4 from '../images/serv4.jpg'
 
-const Services_ = () => {
-  const [current, setCuurent] = useState("Option 1");
+export const service_r = [
+    {
+      img:serv1,
+      title:"Export Facilities",
+      desc: "We at M & M international have built a reputation for exporting high quality, organically certified natural spices across the World. Throughout our journey, we have created a loyal clientele for our products across Dubai, India, Mauritius, kuwait if name a few. This has elevated us to become one of the leading Spices exporters in Sri Lanka."
+    },
+    {
+        img:serv3,
+        title:"Gem Dealing",
+        desc: "We guarantee that our customers will receive a huge range of premium gemstones and top-notch service at M & M International in Colombo, Sri Lanka. We do this by having understanding of the industry and by treating one another with respect and trust."
+    },
+    {
+      img:serv2,
+      title:"Import Dealing",
+      desc: "Importing in to the company requires specialist knowledge and some instances connections with relevant authorities and service providers.Our import service bring in Machinery, Fabrics, electrical items and raw materials. Some of them may consider to import a product of our customer's choice through our operation"
+    },
+    {
+      img:serv4,
+      title:"Custom House Agent" ,
+      desc: "We are an experienced Custom House Agents who engaged in Clearing and Forwarding, Freight Forwarding, Import and Export Consultation, Providing Domestic Cargo Transportation and Hiring all kind of HeavyMachinates. We are specialized in importing, clearing and delivering of all type of cargo including vehicle and general cargo."
+    }
+    
+  ]
+
+const services = () => {
   return (
-    <div className="flex flex-col p-24 items-center px-3">
-      <span className="text-6xl font-semibold text-[#ab1616]">Our Services</span>
-      <div className="flex justify-center mt-12 w-full md:w-1/2">
-        {itemHeadingProducts.map((item) => {
-          return (
-            <div className="flex flex-col justify-center items-center flex-1">
-              <div
-                className="flex items-center justify-center cursor-pointer"
-                onClick={() => setCuurent(item.heading)}
-              >
-                <div
-                  className={`${
-                    current === item.heading ? "bg-[#ab1616]" : "bg-[#3E3E3E]"
-                  } w-2 h-2 md:w-4 md:h-4 rounded-full mx-2`}
-                ></div>
-                <span
-                  className={`${
-                    current === item.heading
-                      ? "text-[#ab1616]"
-                      : "text-[#3E3E3E]"
-                  } text-[16px] cursor-pointer`}
-                >
-                  {item.heading}
-                </span>
+    <div>
+        <section class="text-gray-600 body-font">
+             {service_r.map((item=>(
+              <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                 <img class="object-cover object-center rounded" alt="hero" src={item.img}/>
               </div>
-              <div
-                className={`${
-                  current === item.heading ? "bg-[#ab1616]" : "bg-[#3E3E3E]"
-                } w-full h-[2px] bg-[#1287AF] mt-7`}
-              ></div>
-            </div>
-          );
-        })}
-      </div>
-
-      <div className="flex flex-row items-center justify-center">
-        <div className={`${current === "Option 1" ? "flex" : "hidden"} flex-wrap md:w-2/3 mt-10 items-center justify-center`}>
-          {category1Data.map((item) => {
-            return (
-                <section class="text-gray-600 body-font">
-                    <div class="container px-5  mx-auto flex flex-wrap flex-col">
-                        <img class="xl:w-[40%] lg:w-2/3 md:w-full w-full block mx-auto mb-10 object-cover object-center rounded" alt="hero" src={item.img}/>
-                        <div class="flex flex-col text-center w-full">
-                        <h1 class="text-[32px] font-bold title-font mb-4 text-gray-900">{item.title}</h1>
-                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">{item.desc}</p>
-                        </div>
-                    </div>
-                </section>
-            );
-          })}
-        </div>
-
-        <div className={`${current === "Option 2" ? "flex" : "hidden"} flex-wrap md:w-2/3 mt-10 items-center justify-center`}>
-          {category2Data.map((item) => {
-            return (
-              <section class="text-gray-600 body-font">
-              <div class="container px-5  mx-auto flex flex-wrap flex-col">
-                  <img class="xl:w-[40%] lg:w-2/3 md:w-full w-full block mx-auto mb-10 object-cover object-center rounded" alt="hero" src={item.img}/>
-                  <div class="flex flex-col text-center w-full">
-                  <h1 class="text-[32px] font-bold title-font mb-4 text-gray-900">{item.title}</h1>
-                  <p class="lg:w-2/3 mx-auto leading-relaxed text-base">{item.desc}</p>
-                  </div>
+              <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                 <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{item.title}</h1>
+                 <p class="mb-8 leading-relaxed">{item.desc}</p>
               </div>
-          </section>
-            );
-          })}
-        </div>
-
-        <div className={`${current === "Option 3" ? "flex" : "hidden"} flex-wrap md:w-2/3 mt-10 items-center justify-center`}>
-          {category3Data.map((item) => {
-            return (
-              <section class="text-gray-600 body-font">
-              <div class="container px-5  mx-auto flex flex-wrap flex-col">
-                  <img class="xl:w-[40%] lg:w-2/3 md:w-full w-full block mx-auto mb-10 object-cover object-center rounded" alt="hero" src={item.img}/>
-                  <div class="flex flex-col text-center w-full">
-                  <h1 class="text-[32px] font-bold title-font mb-4 text-gray-900">{item.title}</h1>
-                  <p class="lg:w-2/3 mx-auto leading-relaxed text-base">{item.desc}</p>
-                  </div>
-              </div>
-          </section>
-            );
-          })}
-        </div>
-
-        <div className={`${current === "Option 4" ? "flex" : "hidden"} flex-wrap md:w-2/3 mt-10 items-center justify-center`}>
-          {category4Data.map((item) => {
-            return (
-              <section class="text-gray-600 body-font">
-              <div class="container px-5  mx-auto flex flex-wrap flex-col">
-                  <img class="xl:w-[40%] lg:w-2/3 md:w-full w-full block mx-auto mb-10 object-cover object-center rounded" alt="hero" src={item.img}/>
-                  <div class="flex flex-col text-center w-full">
-                  <h1 class="text-[32px] font-bold title-font mb-4 text-gray-900">{item.title}</h1>
-                  <p class="lg:w-2/3 mx-auto leading-relaxed text-base">{item.desc}</p>
-                  </div>
-              </div>
-          </section>
-            );
-          })}
-        </div>
-      </div>
+           </div>
+             )))}
+        </section>
     </div>
-  );
-};
+  )
+}
 
-export default Services_;
+export default services

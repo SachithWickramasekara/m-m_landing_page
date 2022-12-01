@@ -9,7 +9,7 @@ const Contactus = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_780qk6k',
+      'service_3lgdr8p',
       'template_qmp02ps', 
        form.current, 
        '4j0maiMyhZwhI-qcd')
